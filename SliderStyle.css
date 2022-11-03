@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(./fonts/Roboto.zip);
+    font-style: normal;
+}
+
+html, body{
+    max-width: 1438px;
+    margin: 0px auto;
+}
+
+body {
+    min-width: 1440px;
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.slider__conteiner {
+    width: 100%;
+    height: auto;
+}
+
+.section__conteiner__one {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 442px;
+    height: auto;
+    margin-left: 200px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+h1, h2 {
+    color: rgba(227, 184, 115, 1);
+    font-family: 'Yeseva One';
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Nunito Sans';
+    color: rgba(255, 255, 255, 1); 
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.title__text {
+    font-size: 27px;
+    line-height: 37.42px;
+    margin-top: 176.36px;
+    margin-bottom: 34px;
+}
+
+.title__line {
+    position: absolute;
+    left: 161px;
+    top: 228px;
+}
+
+.title__description {
+    font-size: 14px;
+    line-height: 36.73px;
+    margin-bottom: 42px;
+}
+
+.wrapper__info {
+    display: grid;
+    grid-template-columns: 156px 213px;
+    grid-template-rows: 73px 73px;
+    gap: 34px;
+    margin-bottom: 79.64px;
+    position: relative;
+}
+
+.description__header {
+    font-size: 18px;
+    line-height: 24.95px;
+    margin-bottom: 9px;
+}
+
+.description__text {
+    font-size: 13px;
+    line-height: 21.28px;
+    position: absolute;
+    opacity: 0;
+}
+
+.description__active {
+    width: 161px;
+    height: 42px;
+    opacity: 1;
+    font-size: 13px;
+    line-height: 21.28px;
+    color: white;
+}
+
+
+
+.slider__navig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 205.68px;
+    height: 13.28px;
+}
+
+.slider__dots{
+    width: 63.78px;
+    height: 9.57px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-top: -4px;
+
+}
+
+.dot__active {
+    width: 9.57px;
+    height: 9.57px;
+    background: url(file:///C:/Users/rzarg/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/git/projects/Skillfactory/Slider/svg/dot__nonActive.svg);
+}
+
+.dot__item {
+    width: 9.57px;
+    height: 9.57px;  
+    margin: 0 10.54px 0 0;
+    cursor: pointer;
+    background: url(file:///C:/Users/rzarg/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/git/projects/Skillfactory/Slider/svg/dot__nonActive.svg);
+}
+
+.dot__item:hover {
+    background: url(file:///C:/Users/rzarg/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/git/projects/Skillfactory/Slider/svg/dot__active.svg);
+}
+
+.dot_item:last-child {
+    margin: 0;
+}
+
+
+.slider__arrow {
+    margin: 0 29.5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__arrow:last-of-type {
+    margin: 0 0 0 29.5px;
+}
+
+
+
+.section__conteiner__two{
+    width: 679px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 107px;
+    margin-left: 693px;
+    margin-right: 0px;
+}
+
+.slider__titles {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 52.68px;
+    width: 205.68px;
+    height: 13.28px;
+}
+
+
+.slider__title {
+    font-size: 14px;
+    line-height: 19.4px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 60.5px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+    cursor: pointer;
+}
+
+.slider__title:hover {
+    color: rgba(227, 184, 115, 1);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(227, 184, 115, 1); 
+}
+
+.slider__title:last-child {
+    margin: 0;
+}
+
+.slider__images {
+    width: 679px;
+    height: 482.38px;
+    position: relative;
+}
+
+.slider__images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+
+
+.slider__images .image.active {
+    opacity: 1;
+}
+
+
